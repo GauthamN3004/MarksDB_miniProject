@@ -16,7 +16,7 @@ include("check_login.php");
         <h1 style="text-align: center"><b>TEACHERS</b></h1>
         <div style="text-align: right;">
           <h3 >Hello, <?php echo strtoupper($user); ?></h1>
-          <a href="logout.php"><button class="btn btn-default"><b>LOGOUT</b></button><br></a>
+          <p><a href="welcome.php"><button class="btn btn-default"><b>HOME</b></button></a>  <a href="logout.php"><button class="btn btn-default"><b>LOGOUT</b></button></a></p>
           <br>
         </div>
     </div>
@@ -24,15 +24,15 @@ include("check_login.php");
     <div class="row" >
         <div class="col-lg-1"></div>
         <div class="col-lg-3" style="border-radius:10px;background-color:rgba(180,180,180,0.6);margin-left: 30px;">
-          <a href="#"> <center><img src="add.png" height="150" width="150"> <center></a>
+          <a href="add_teacher.php"> <center><img src="add_teacher.png" height="150" width="150"> <center></a>
           <h4 style="text-align:center; ">ADD TEACHER</h4>
         </div>
         <div class="col-lg-3" style="border-radius:10px;background-color:rgba(180,180,180,0.6);margin-left: 30px;">
-          <a href="#"> <center><img src="trash.png" height="150" width="150"> <center></a>
+          <a href="delete_teacher.php"> <center><img src="del_teacher.png" height="150" width="150"> <center></a>
           <h4 style="text-align:center; ">DELETE TEACHER</h4>
         </div>
         <div class="col-lg-3" style="border-radius:10px;background-color:rgba(180,180,180,0.6);margin-left: 30px;">
-          <a href="#"> <center><img src="teachers_group.png" height="150" width="150"> <center></a>
+          <a href="view_teacher.php"> <center><img src="view_teacher.png" height="150" width="150"> <center></a>
           <h4 style="text-align:center; ">VIEW TEACHERS</h4>
         </div>
         <div class="col-sm-2"></div>

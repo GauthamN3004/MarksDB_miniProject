@@ -68,7 +68,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <h1 style="text-align: center"><b>ADD ADMINISTRATOR</b></h1>
         <div style="text-align: right;">
           <h3 >Hello, <?php echo strtoupper($user); ?></h1>
-          <a href="logout.php"><button class="btn btn-default"><b>LOGOUT</b></button><br></a>
+          <p><a href="welcome.php"><button class="btn btn-default"><b>HOME</b></button></a>  <a href="logout.php"><button class="btn btn-default"><b>LOGOUT</b></button></a></p>
           <br>
         </div>
     </div>
@@ -78,9 +78,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       <div class="col-sm-4" style="border-radius:10px;background-color:rgba(180,180,180,0.6);text-align: center;">
         <br>
           <form class="" action="add_admin.php" method="post" autocomplete="off">
-            <p >USERNAME :<br> <input type="text" name="username" placeholder="username"><br><br></p>
-            <p>PASSWORD :<br> <input type="password" name="password"  placeholder="password"><br><br></p>
-            <p>CONFIRM PASSWORD:<br><input type="password" name="confirm" placeholder="confirm password"><br><br></p>
+            <p >USERNAME<br> <input type="text" name="username" placeholder="username"><br><br></p>
+            <p>PASSWORD<br> <input type="password" name="password"  placeholder="password"><br><br></p>
+            <p>CONFIRM PASSWORD<br><input type="password" name="confirm" placeholder="confirm password"><br><br></p>
             <br>
             <p><button type="submit" class="btn btn-default"> SUBMIT</button> <a href="welcome.php"><button type="button" class="btn btn-primary">CANCEL</button></a> </p>
           </form>
